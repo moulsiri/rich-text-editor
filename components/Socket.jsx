@@ -9,9 +9,9 @@ const socket = io.connect(URL, {
 });
 
 const Socket = () => {
-  useEffect(() => {
-    socketInitializer();
-  }, []);
+  // useEffect(() => {
+  //   socketInitializer();
+  // }, []);
   const socketInitializer = async () => {
     let res = await axios.get("/soket/api/");
     // console.log(res);
